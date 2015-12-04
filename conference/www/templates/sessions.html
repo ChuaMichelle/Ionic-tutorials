@@ -1,0 +1,12 @@
+<ion-view view-title="Sessions">
+  <ion-content>
+    <ion-list>
+      <ion-list>
+        <ion-item menu-close href="#/app/sessions/123">
+          Android test
+        </ion-item>
+      <ion-item ng-repeat="session in sessions"
+                href="#/app/sessions/{{session.id}}">{{session.title}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
